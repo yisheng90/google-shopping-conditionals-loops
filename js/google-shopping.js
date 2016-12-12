@@ -31,7 +31,7 @@ for (var i = 0; i < data.items.length; i++) {
 // Question 4
 console.log('------Question 4---------')
 for (var i = 0; i < data.items.length; i++) {
-  if (data.items[i].product.brand.toUpperCase() === 'CANON') {
+  if (data.items[i].product.brand.toUpperCase().includes('CANON')) {
     console.log(data.items[i].product.title)
   }
 }
@@ -39,7 +39,7 @@ for (var i = 0; i < data.items.length; i++) {
 // Question 5
 console.log('------Question 5---------')
 for (var i = 0; i < data.items.length; i++) {
-  if (data.items[i].product.brand.toUpperCase() === 'CANON' && data.items[i].product.author.name.toUpperCase() === 'EBAY') {
+  if (data.items[i].product.brand.toUpperCase().includes('CANON') && data.items[i].product.author.name.toUpperCase().includes('EBAY')) {
     console.log(data.items[i].product.title)
   }
 }
